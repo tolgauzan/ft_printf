@@ -28,7 +28,7 @@ int	ft_puthex(unsigned int n, char c)
 	}
 	if (c == 'x')
 		hex = "0123456789abcdef"[n % 16];
-	else if (c == 'X')
+	if (c == 'X')
 		hex = "0123456789ABCDEF"[n % 16];
 	if (ft_putchar(hex) == -1)
 		return (-1);
